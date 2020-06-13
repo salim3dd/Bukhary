@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_index"
+            android:icon="@drawable/ic_view_headline_black_24dp"
+            android:title="@string/index"/>
+        <item
+            android:id="@+id/nav_Favorite"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="@string/favorite"/>
+
+
+        <item
+            android:id="@+id/nav_More_app"
+            android:icon="@drawable/ic_apps_black_24dp"
+            android:title="@string/more_app" />
+
+    </group>
+
+    <item android:title="@string/communication">
+        <menu>
+
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/send_email"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add_fav"
+        android:orderInCategory="100"
+        android:title="@string/add_to_favorite"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/copy"
+        android:orderInCategory="100"
+        android:title="@string/text_copy"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="100"
+        android:title="@string/share_text"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/help"
+        android:orderInCategory="100"
+        android:title="@string/help"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/home"
+        android:orderInCategory="100"
+        android:title="@string/dilog_close"
+        app:showAsAction="never" />
+</menu>

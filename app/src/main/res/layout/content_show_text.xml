@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.qays3dd.buhk.Show_Text_Activity"
+    tools:showIn="@layout/app_bar_show_text"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:padding="2dp">
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webView" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView_show_Text"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#000000"
+            android:gravity="right"
+            android:visibility="invisible" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btn_control"
+            android:onClick="btn_control"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/btn_control" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btn_copy"
+            android:onClick="btn_copy"
+            android:background="@drawable/btn_copy"
+            android:visibility="invisible"
+            android:layout_above="@+id/btn_control"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btn_help"
+            android:onClick="btn_help"
+            android:background="@drawable/btn_help"
+            android:visibility="invisible"
+            android:layout_above="@+id/btn_copy"
+            android:layout_alignLeft="@+id/btn_home"
+            android:layout_alignStart="@+id/btn_home" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btn_share"
+            android:onClick="btn_share"
+            android:background="@drawable/btn_share"
+            android:visibility="invisible"
+            android:layout_above="@+id/btn_help"
+            android:layout_alignLeft="@+id/btn_home"
+            android:layout_alignStart="@+id/btn_home" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btn_home"
+            android:onClick="btn_home"
+            android:background="@drawable/btn_home"
+            android:visibility="invisible"
+            android:layout_above="@+id/btn_share"
+            android:layout_alignRight="@+id/webView"
+            android:layout_alignEnd="@+id/webView" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btn_fav"
+            android:onClick="btn_fav"
+            android:background="@drawable/btn_fav"
+            android:visibility="invisible"
+            android:layout_above="@+id/btn_home"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/Ly_Ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"
+            android:layout_weight="0">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+</LinearLayout>
